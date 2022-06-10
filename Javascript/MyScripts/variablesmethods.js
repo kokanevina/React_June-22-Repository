@@ -62,3 +62,6 @@ result will be returned automatically */
 let arrowFun3=num=>num*num*num
 let cube=arrowFun3(13);
 console.log(cube);
+
+const salary=67890;
+//salary=5667; : can not reassign the value for constat variable
