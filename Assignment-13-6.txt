@@ -1,0 +1,7 @@
+Q.1 Create Image node with attribites src, height, width and alt
+
+when u click on button change : image should be changed
+when u click on zoomIn button : image should be zoomed in :increased by width and height
+when u click on zoomOut button : image should be zoomed out : decreased by width and height
+
+Q.2 Check other DOM methods to replaced the elements and to remove the elements from dom

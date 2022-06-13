@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form span{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="Success.html"  novalidate> <!-- novalidate : browsers stops validating fields-->
+    <!--     <label for="fname">Enter your first name</label>
+        <input type="text" id="fname" onblur="validate1()" required> <br>
+        <span id="error1"></span> <br> <br>
+        <label for="uname">Set Username</label>
+        <input type="text" id="uname" onblur="validate2()" minlength="4"   required > <br>
+        <span id="error2"></span><br><br> -->
+        <label for="pass">Set New Password</label>
+        <input type="text" id="pass" onblur="validate3()" required  pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&\*]).{6,12}"> <br>
+        <span id="error3"></span><br><br>
+        <input type="submit" value="REGISTER">
+        <input type="reset" >
+    </form>
+    <script src="MyScripts/Validation.js"></script>
+</body>
+</html>
