@@ -12,5 +12,8 @@ console.log(newname);
 console.log(dname);
 
 let dobj=new dept.Deparment();
+dobj.deptId=5677;
+dobj.deptName="CSE";
 let libobje=new dept.Library();
+libobje.libraryName="Mahatma Phule Library"
 
