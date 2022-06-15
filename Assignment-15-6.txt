@@ -1,0 +1,19 @@
+Create new Project
+
+Open App.js: inside return statement remove all logic
+
+Implement your own logic :
+create header with navbar  : JSX elements (look like html element)
+
+Open App.css : clear all logic 
+write some classes having css logic
+
+.myHeader{
+
+
+}
+
+
+Apply these classes in App.js file to ur JSX elements using attribute className
+
+<header className="myHeader">
