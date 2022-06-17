@@ -1,6 +1,6 @@
 // Info.js : Info, Info
 //create css file, import it here and apply design
-import { Family } from '../FamilyComponent/Family';
+import { Family } from './FamilyComponent/Family';
 export function Info(){
     let infoHeading='About Sachin';
     let myStyle={
