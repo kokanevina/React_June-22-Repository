@@ -19,6 +19,19 @@ export function Section(){
             <Flower flowerSource={flinfoArray[1].src} flowerName={flinfoArray[1].name} flowerInfo={flinfoArray[1].info} shortDesc={flinfoArray[1].desc}></Flower>
             <Flower flowerSource={flinfoArray[2].src} flowerName={flinfoArray[2].name} flowerInfo={flinfoArray[2].info} shortDesc={flinfoArray[2].desc}></Flower>
         </section>
+        <hr></hr>
+        <section>
+            {
+            flinfoArray.map(obj=>{
+              return (
+                <Flower flowerSource={obj.src} flowerName={obj.name} flowerInfo={obj.info} shortDesc={obj.desc}></Flower>
+              )      
+            })
+            }
+        </section>
         </>
     );
 }
+
+// when u want to add javascript logic in JSX element then use {}
+// when u want to add JSX element in javascript logic then use return ()
