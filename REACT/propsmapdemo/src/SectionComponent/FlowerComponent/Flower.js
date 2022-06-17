@@ -1,9 +1,6 @@
 
 
 export function Flower(props){
-    let flower = "Lotus";
-    let img_name = "Lotus Flower"
-    let altMessage ="lotus image"
     return (
      
         <article>
