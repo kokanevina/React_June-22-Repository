@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { FilterList, OrderList } from './ArrayComponent/OrderList';
 import { TableD } from './ArrayComponent/TableD';
+import { Car } from './ClassComponent/Car';
 import {Info} from './InfoComponent/Info';
 
 function App(){
@@ -25,6 +26,8 @@ function App(){
       <FilterList></FilterList>
       <hr></hr>
       <TableD></TableD>
+      <hr></hr>
+      <Car></Car>
     </React.Fragment>
   );
 }
