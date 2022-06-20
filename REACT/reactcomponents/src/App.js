@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { FilterList, OrderList } from './ArrayComponent/OrderList';
+import { TableD } from './ArrayComponent/TableD';
 import {Info} from './InfoComponent/Info';
 function App(){
   let cricker="Sachin Tendulkarrrrr";
@@ -16,7 +18,12 @@ function App(){
       </section>
       <Info></Info>
       </article>
-
+      <hr></hr>
+      <OrderList></OrderList>
+      <hr></hr>
+      <FilterList></FilterList>
+      <hr></hr>
+      <TableD></TableD>
     </React.Fragment>
   );
 }
