@@ -3,6 +3,7 @@ import './App.css';
 import { FilterList, OrderList } from './ArrayComponent/OrderList';
 import { TableD } from './ArrayComponent/TableD';
 import {Info} from './InfoComponent/Info';
+
 function App(){
   let cricker="Sachin Tendulkarrrrr";
   let altMessage="sachin";
