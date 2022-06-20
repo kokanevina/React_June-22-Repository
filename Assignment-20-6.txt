@@ -1,0 +1,7 @@
+Create new project ReactHooks:
+create Components Folder in src: 
+Input : implement a template for taking company name as user input (without form)
+
+Student : implement a template for taking stud id, stud name, stud standard as user input  (with form)
+
+

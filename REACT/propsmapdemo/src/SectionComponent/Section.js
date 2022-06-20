@@ -26,7 +26,7 @@ export function Section(){
             {
             flinfoArray.map(obj=>{
               return (
-                <Flower key="unique"  flowerSource={obj.src} flowerName={obj.name} flowerInfo={obj.info} shortDesc={obj.desc}></Flower>
+                <Flower key={obj.name}  flowerSource={obj.src} flowerName={obj.name} flowerInfo={obj.info} shortDesc={obj.desc}></Flower>
               )      
             })
             }

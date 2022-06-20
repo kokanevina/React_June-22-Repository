@@ -23,7 +23,7 @@ export function TableD(){
     <table border="2">
         <tbody>{
             empArray.map(empobj=>{
-                return (<tr><td>{empobj.eid}</td><td>{empobj.ename}</td><td>{empobj.empSalary}</td></tr>)
+                return (<tr key={empobj.eid}><td>{empobj.eid}</td><td>{empobj.ename}</td><td>{empobj.empSalary}</td></tr>)
             })
         }
         </tbody>
