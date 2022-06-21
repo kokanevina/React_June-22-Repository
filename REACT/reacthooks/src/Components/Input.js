@@ -46,9 +46,16 @@ export function Input3(){
             <p>
                 <b>Company Name is {companyName2}</b>
             </p>
+            <Child cname={companyName2}></Child>
         </div>
     );
 }
+export function Child(prop){
+    return (
+        <span>Company Name in child : {prop.cname}</span>
+    );
+}
+
 
 /* 
 function JS(){
