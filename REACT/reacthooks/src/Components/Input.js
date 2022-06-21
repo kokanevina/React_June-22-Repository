@@ -35,8 +35,6 @@ export function Input2(){
         </div>
     );
 }
-
-
 export function Input3(){
     let [companyName2,setCompany]= useState("Squad");
     return(

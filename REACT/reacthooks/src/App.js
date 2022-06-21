@@ -1,4 +1,5 @@
 import { Input1,Input2,Input3 } from "./Components/Input";
+import { Student } from "./Components/Student";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
     <Input2></Input2>
     <hr></hr>
     <Input3></Input3>
+    <hr></hr>
+    <Student></Student>
    </>
   );
 }
