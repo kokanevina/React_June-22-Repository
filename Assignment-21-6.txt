@@ -1,0 +1,8 @@
+
+
+Create any Section having initial style : backgroundcolor, foreground color, padding (using javascript object)
+
+take new user input from user for backgroundColor, color (html color pallette )
+once u choose a color from pallete above section style should be updated
+
+
