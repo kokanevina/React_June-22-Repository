@@ -1,4 +1,5 @@
 import { Input1,Input2,Input3 } from "./Components/Input";
+import { StudArray } from "./Components/StudArray";
 import { Student } from "./Components/Student";
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
     <Input3></Input3>
     <hr></hr>
     <Student></Student>
+    <hr></hr>
+    <StudArray></StudArray>
    </>
   );
 }

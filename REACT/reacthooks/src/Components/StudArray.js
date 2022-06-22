@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 
-export function Student(){
-
+export function StudArray(){
+    let [studArray,setArray]=useState([]);
     let [student,setStudent]=useState({
         'studId':0,
         'studName':'',
         'studStandard':""
     });
-
     function updateStudent(event){
         console.log(event.target.name);
         console.log(event.target.value);
@@ -16,10 +15,17 @@ export function Student(){
                return {...currentObj, [event.target.name]:event.target.value}
         });
     }
+    function collect(event){       
+        console.log("in collection function");
+        event.preventDefault();
+        setArray(currentArray=>{
+                return [...currentArray,student]
+        });
+    }
     return(
         <div>
             <h2>Student Input Form</h2>
-        <form>
+        <form onSubmit={collect}>
             <label>Enter Id:</label>
             <input type="number" name="studId" value={student.studId} onChange={updateStudent}></input> <br></br>
             <label>Enter Name:</label>
@@ -31,25 +37,17 @@ export function Student(){
         </form>
         <div>
             <h2>Student Details are:</h2>
-            <ul>
-                <li>Id: {student.studId}</li>
-                <li>Name: {student.studName}</li>
-                <li>Standard: {student.studStandard}</li>
-            </ul>
+            <table border="2">
+                <tbody>
+                    {
+                       studArray.map(stud=>{
+                        return (<tr key={stud.studId}><td>{stud.studId}</td><td>{stud.studName}</td><td>{stud.studStandard}</td></tr>)
+                       }) 
+                    }
+                </tbody>
+            </table>
         </div>
         </div>    
     );
 }
 
-/* 
-function test(){
-    let array=[34,56,78];
-    let array1=array;  // no copy
-     let array2=[...array];
-     let sample={
-        'id':101,
-        'sname':'samplename'
-     }
-     let sample1=sample; //no copy
-     let sample2 ={...sample, [sname]:'hari'}
-} */
