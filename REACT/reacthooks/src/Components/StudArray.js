@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export function StudArray(){
     let [studArray,setArray]=useState([]);
+    
     let [student,setStudent]=useState({
         'studId':0,
         'studName':'',
