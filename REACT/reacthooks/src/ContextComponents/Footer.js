@@ -7,6 +7,9 @@ let singerName=useContext(context2);
         <footer style={styleObj}>
             <h2>{singerName}</h2>
             This is demo of useContext
+            <context2.Consumer>
+               {sn=><p>{sn}</p>}
+            </context2.Consumer>
         </footer>
     );
 }
