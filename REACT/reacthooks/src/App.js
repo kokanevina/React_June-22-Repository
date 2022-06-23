@@ -1,11 +1,12 @@
-import { Input1,Input2,Input3 } from "./Components/Input";
+/* import { Input1,Input2,Input3 } from "./Components/Input";
 import { StudArray } from "./Components/StudArray";
-import { Student } from "./Components/Student";
+import { Student } from "./Components/Student"; */
+import { Article } from "./ContextComponents/article";
 
 function App() {
   return (
     <>
-    <Input1></Input1>
+ {/*    <Input1></Input1>
     <hr></hr>
     <Input2></Input2>
     <hr></hr>
@@ -14,6 +15,8 @@ function App() {
     <Student></Student>
     <hr></hr>
     <StudArray></StudArray>
+    <hr></hr><hr></hr> */}
+    <Article></Article>
    </>
   );
 }
