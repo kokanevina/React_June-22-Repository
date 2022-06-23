@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { Footer } from "./Footer";
+import { Footer } from "./footer";
 import { Section } from "./section";
 
 export let context1=createContext();
@@ -21,11 +21,9 @@ export function Article(){
             <context1.Provider value={songObject}>
                     <Section></Section>
             </context1.Provider>
-               <styleContext.Provider value={myStyle}>
+            <styleContext.Provider value={myStyle}>
                <Footer></Footer>
-               </styleContext.Provider>
-              
-         
+            </styleContext.Provider> 
         </article>
     );
 }
