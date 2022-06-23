@@ -2,6 +2,7 @@
 import { StudArray } from "./Components/StudArray";
 import { Student } from "./Components/Student"; */
 import { Article } from "./ContextComponents/article";
+import { College } from "./RefComponents/College";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
     <hr></hr>
     <StudArray></StudArray>
     <hr></hr><hr></hr> */}
-    <Article></Article>
-    {console.log("in render")}
+    {/* <Article></Article> */}
+   <hr></hr><hr></hr>
+   <College></College>
    </>
   );
 }

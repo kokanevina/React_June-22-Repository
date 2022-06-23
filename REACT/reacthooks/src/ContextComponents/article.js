@@ -25,7 +25,7 @@ export function Article(){
         <article>
             <h1>{singer}</h1>
             <label>Enter Name:</label>
-            <input type="text"value={singer} onChange={(e)=>setName(e.target.value)}></input>
+            <input type="text" value={singer} onChange={(e)=>setName(e.target.value)}></input>
             <label>Enter number of songs sung</label>
             <input type="number" value={songs} onChange={(e)=>setValue(e.target.value)}></input>
             <context1.Provider value={songObject}>
