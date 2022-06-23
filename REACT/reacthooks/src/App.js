@@ -17,6 +17,7 @@ function App() {
     <StudArray></StudArray>
     <hr></hr><hr></hr> */}
     <Article></Article>
+    {console.log("in render")}
    </>
   );
 }
