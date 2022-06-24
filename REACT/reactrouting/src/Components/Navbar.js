@@ -8,8 +8,7 @@ export function Navbar(){
             <li><Link to="home">HOME</Link></li>
             <li><Link to="login">LOGIN</Link></li>
             <li><Link to="employees">EMPLOYEES</Link></li>
-        </ol>
-        
+        </ol>      
     </nav>
     );
 }

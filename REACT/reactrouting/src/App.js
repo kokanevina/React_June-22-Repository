@@ -7,7 +7,6 @@ function App() {
   return (  
     <>
      <Header></Header> 
-
     <div style={{border:'2px solid red'}}>
     <Routes>
       <Route element={<Home></Home>} path='/'></Route>
