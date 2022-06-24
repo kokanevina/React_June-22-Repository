@@ -3,13 +3,14 @@ import { useRef } from "react";
 
 
 export function College(){
+        let college="";  // as value is not in useState, we can not update on web page
        let inputNode=useRef(null);
         let taNode=useRef(null);
-        let bNode=useRef(null);
-    let getCollege=function(){
-            console.log(inputNode.current.value);
-        taNode.current.value=inputNode.current.value;
-        bNode.current.text=inputNode.current.value;
+        let bNode=useRef("");
+       let getCollege=function(){
+          college=inputNode.current.value;
+           taNode.current.value=inputNode.current.value;
+           bNode.current.innerHTML =inputNode.current.value;
     }
 
     return(
@@ -19,7 +20,7 @@ export function College(){
             <button onClick={getCollege}>GET</button>
             <textarea ref={taNode}>
             </textarea>
-            <b ref={bNode}></b>
+            <b ref={bNode}>{college}</b> {/* not getting updated */}
         </div>
     );
 
