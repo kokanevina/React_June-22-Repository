@@ -1,7 +1,7 @@
 import './Login.css'
-
+import { Link } from 'react-router-dom';
 export function Login(){
-    return (
+    return (<>
         <div className="loginBlock">
             <form>
                 <label>Enter Username</label>
@@ -11,6 +11,10 @@ export function Login(){
                 <input type="submit"></input>
             </form>
         </div>
+        <div>
+           <span>New User? click  <Link to="/register">here </Link> to register </span>
+        </div>
+        </>
     )
 
 }

@@ -1,0 +1,3 @@
+Create PageNotFound Component in react.
+It should be routed when no Link is matching to any other component
+Use * in Route path and put this Route in the end
