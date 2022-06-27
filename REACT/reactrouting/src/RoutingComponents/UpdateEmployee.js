@@ -2,20 +2,22 @@ import { useEffect } from 'react';
 import {useParams} from 'react-router-dom';
 import { empArray } from '../Data/EmpInfo';
 import { useState } from 'react';
-import {Redirect} from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 export function UpdateEmployee(){
     let {eid}=useParams();
     let [empObj,setEmp]=useState({});
+    let navigate=useNavigate();
     useEffect(()=>{  
         console.log(typeof eid);
         let found=empArray.find(emp=>emp.id===parseInt(eid));   
         setEmp(found);
     },[eid]); 
 
-    function updateArray(){
+    function updateArray(event){
         // implement the logic same what we did in react forms
         console.log("in function");
-        <Redirect to="/employees"></Redirect>
+        event.preventDefault();
+        navigate("/employees", { replace: true });
         
     }
     return (
