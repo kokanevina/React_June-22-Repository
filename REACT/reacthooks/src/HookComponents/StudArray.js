@@ -26,7 +26,9 @@ export function StudArray(){
     }
     function test(){
         if(studArray.length>0)
-        return <StudDetails studArray={studArray}></StudDetails>
+         return <StudDetails studArray={studArray}></StudDetails>
+        else
+         return <p>Currently the array is empty</p>
     }
     return(
         <div>
