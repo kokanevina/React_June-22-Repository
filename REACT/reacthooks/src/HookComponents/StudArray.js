@@ -30,6 +30,9 @@ export function StudArray(){
         else
          return <p>Currently the array is empty</p>
     }
+    function test1(){
+        return(studArray.length>0 ? <StudDetails studArray={studArray}></StudDetails> : <p>Currently the array is empty</p> ); 
+    }
     return(
         <div>
             <h2>Student Input Form</h2>
