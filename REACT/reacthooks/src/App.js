@@ -1,8 +1,6 @@
-/* import { Input1,Input2,Input3 } from "./Components/Input";
-import { StudArray } from "./Components/StudArray";
-import { Student } from "./Components/Student"; */
-import { Article } from "./ContextComponents/article";
-import { College } from "./RefComponents/College";
+
+import { StudArray } from "./HookComponents/StudArray";
+
 
 function App() {
   return (
@@ -18,8 +16,9 @@ function App() {
     <StudArray></StudArray>
     <hr></hr><hr></hr> */}
     {/* <Article></Article> */}
-   <hr></hr><hr></hr>
-   <College></College>
+    <StudArray></StudArray>
+   {/* <hr></hr><hr></hr>
+   <College></College> */}
    </>
   );
 }

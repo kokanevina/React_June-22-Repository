@@ -16,9 +16,7 @@ export function UpdateEmployee(){
     function updateArray(event){
         // implement the logic same what we did in react forms
         console.log("in function");
-        event.preventDefault();
-        navigate("/employees", { replace: true });
-        
+        navigate("/employees");   
     }
     return (
         <div>

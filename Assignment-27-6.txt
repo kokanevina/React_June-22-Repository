@@ -1,0 +1,5 @@
+Just like edit link, create delete Link for DeleteComponent
+pass id via Link,
+Delele Component should extract id from link, should find the employee in array matching with
+param id and should delete that employee from array and after that it should navigate to 
+Employees component again

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { StudDetails } from "./StudDetails";
 
 
 export function StudArray(){
@@ -23,6 +24,10 @@ export function StudArray(){
                 return [...currentArray,student]
         });
     }
+    function test(){
+        if(studArray.length>0)
+        return <StudDetails studArray={studArray}></StudDetails>
+    }
     return(
         <div>
             <h2>Student Input Form</h2>
@@ -36,18 +41,8 @@ export function StudArray(){
             <input type="submit" value="Register"></input>
             <input type="reset"></input>
         </form>
-        <div>
-            <h2>Student Details are:</h2>
-            <table border="2">
-                <tbody>
-                    {
-                       studArray.map(stud=>{
-                        return (<tr key={stud.studId}><td>{stud.studId}</td><td>{stud.studName}</td><td>{stud.studStandard}</td></tr>)
-                       }) 
-                    }
-                </tbody>
-            </table>
-        </div>
+        {test()}
+          
         </div>    
     );
 }
