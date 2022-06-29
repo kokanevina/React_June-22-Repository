@@ -1,0 +1,28 @@
+{
+
+    "user":[
+        {
+            "id":1,
+            "name":"hari",
+            "username":"hari123",
+            "email":"hari@gmail.com",
+            "phone":"9898989898"
+        },
+        {
+            "id":2,
+            "name":"pari",
+            "username":"pari12",
+            "email":"pari@gmail.com",
+            "phone":"9898989877"
+        },
+        {
+            "id":3,
+            "name":"harish",
+            "username":"h12",
+            "email":"harish@gmail.com",
+            "phone":"9898989866"
+        }
+    ]
+
+
+}

@@ -23,6 +23,7 @@ export function StudArray(){
         setArray(currentArray=>{
                 return [...currentArray,student]
         });
+        
     }
     function test(){
         if(studArray.length>0)
