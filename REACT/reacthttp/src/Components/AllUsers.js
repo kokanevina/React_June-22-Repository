@@ -32,6 +32,7 @@ export function AllUsers(){
                         <td>{ele.id}</td><td>{ele.name}</td>
                         <td>{ele.username}</td><td>{ele.email}</td>
                         <td>{ele.phone}</td>
+                        <td>{/* put delete button here */}</td>
                     </tr> 
                 )
             }

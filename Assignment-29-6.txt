@@ -1,0 +1,2 @@
+Create button to deleteuser. Call any function in AllUsersComponent
+intern call service method to delete the record by passing id
