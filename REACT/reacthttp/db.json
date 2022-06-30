@@ -1,32 +1,18 @@
 {
   "user": [
     {
+      "id": 1,
+      "name": "hari",
+      "username": "hari123",
+      "email": "hari@email.com",
+      "phone": "2123234543"
+    },
+    {
       "id": 2,
       "name": "pari",
-      "username": "pari12",
-      "email": "pari@gmail.com",
-      "phone": "9898989877"
-    },
-    {
-      "id": 3,
-      "name": "harish",
-      "username": "h12",
-      "email": "harish@gmail.com",
-      "phone": "9898989866"
-    },
-    {
-      "id": 4,
-      "name": "Sachin",
-      "username": "s08",
-      "email": "sachin@gmail.com",
-      "phone": "9899989866"
-    },
-    {
-      "id": 5,
-      "name": "Vikram",
-      "username": "V56",
-      "email": "vikram@gmail.com",
-      "phone": "9808989866"
+      "username": "pari123",
+      "email": "pari@email.com",
+      "phone": "345435645654"
     }
   ]
 }

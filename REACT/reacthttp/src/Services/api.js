@@ -7,6 +7,9 @@ export let getAllUser=async ()=>{
  return await axios.get(url);        // get request to json server
 }
 
+export let getUser=async (id)=>{
+    return await axios.get(`${url}/${id}`);        // get request to json server
+   }
 export let deleteUser=async(id)=>{
     return await axios.delete(`${url}/${id}`);
 }
