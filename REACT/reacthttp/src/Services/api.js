@@ -13,3 +13,6 @@ export let getUser=async (id)=>{
 export let deleteUser=async(id)=>{
     return await axios.delete(`${url}/${id}`);
 }
+export let updateUser=async(id,user)=>{
+    await axios.put(`${url}/${id}`,user);
+}

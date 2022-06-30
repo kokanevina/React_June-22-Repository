@@ -2,17 +2,17 @@
   "user": [
     {
       "id": 1,
-      "name": "hari",
-      "username": "hari123",
-      "email": "hari@email.com",
-      "phone": "2123234543"
+      "name": "hariom",
+      "username": "h123",
+      "email": "hari@gmail.com",
+      "phone": "9898989898"
     },
     {
       "id": 2,
       "name": "pari",
-      "username": "pari123",
-      "email": "pari@email.com",
-      "phone": "345435645654"
+      "username": "pari1255",
+      "email": "pari@gmail.com",
+      "phone": "7878787878"
     }
   ]
 }
