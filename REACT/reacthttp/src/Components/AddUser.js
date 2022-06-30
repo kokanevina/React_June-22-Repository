@@ -1,8 +1,8 @@
- import { useEffect, useState } from "react";
-import  {useParams,useNavigate} from 'react-router-dom';
-import { getUser } from "../Services/api";
-import { updateUser } from "../Services/api";
-export function UpdateUser(){
+import {useState } from "react";
+import  {useNavigate} from 'react-router-dom';
+import { addUser } from "../Services/api";
+
+export function AddUser(){
     let navigate=useNavigate();
     let [user,setUser]=useState({
         "id":0,
@@ -11,15 +11,7 @@ export function UpdateUser(){
         "email": "",
         "phone": ""
     });
-    let {uid}=useParams();
-    useEffect(()=>{
-        getU();
-    },[]);
-
-    let getU=async ()=>{
-        let response= await getUser(uid);
-        setUser(response.data);
-    }
+   
     function updateU(event){
         console.log(event.target.name);
         console.log(event.target.value);
@@ -27,16 +19,17 @@ export function UpdateUser(){
                return {...currentObj, [event.target.name]:event.target.value}
         });
     }
-
-    let editUser= async (e)=>{
+    let addU= async(e)=>{
         e.preventDefault();
-        await updateUser(uid,user);
-        navigate("/allusers");
+        await addUser(user);
+        navigate('/allusers');
     }
     return(
         <div>
-            <h2>User Update Form</h2>
-        <form onSubmit={editUser}>
+            <h2>User Register Form</h2>
+        <form onSubmit={addU}>
+            <label>Enter Id:</label>
+            <input type="number"  name="id" value={user.id} onChange={updateU}></input> <br></br>
             <label>Enter Name:</label>
             <input type="text"  name="name" value={user.name} onChange={updateU}></input> <br></br>
             <label>Enter username:</label>
@@ -45,13 +38,13 @@ export function UpdateUser(){
             <input type="email"  name="email" value={user.email} onChange={updateU}></input> <br></br>
             <label>Enter Phone:</label>
             <input type="text" name="phone" value={user.phone} onChange={updateU}></input> <br></br>
-            <input type="submit" value="UPDATE"></input>
+            <input type="submit" value="ADD"></input>
             <input type="reset"></input>
         </form>
         <div>
             <h2>User Details are:</h2>
             <ul>
-                <li>id:{uid}</li>
+            <li>name: {user.id}</li>
                 <li>name: {user.name}</li>
                 <li>username: {user.username}</li>
                 <li>email: {user.email}</li>

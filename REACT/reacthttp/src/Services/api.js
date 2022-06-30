@@ -16,3 +16,6 @@ export let deleteUser=async(id)=>{
 export let updateUser=async(id,user)=>{
     await axios.put(`${url}/${id}`,user);
 }
+export let addUser=async(user)=>{
+    await axios.post(url,user);
+}
