@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
-import { getAllUser } from "../Services/api";
-
+import { getAllUser,deleteUser } from "../Services/api";
+import { Link } from "react-router-dom";
 
 export function AllUsers(){
     let [users, setUsers]=useState([]);
@@ -13,7 +13,11 @@ export function AllUsers(){
         let response=   await getAllUser();
         setUsers(response.data);
     }
-
+   let deleteU=async(id)=>{
+    let response=await deleteUser(id);
+    console.log(response);
+    getUsers();
+   }
     return(
         <table border={3}>
             <thead>
@@ -32,7 +36,8 @@ export function AllUsers(){
                         <td>{ele.id}</td><td>{ele.name}</td>
                         <td>{ele.username}</td><td>{ele.email}</td>
                         <td>{ele.phone}</td>
-                        <td>{/* put delete button here */}</td>
+                        <td><button onClick={()=>deleteU(ele.id)}>DELETE</button></td>
+                        <td><Link to={`/edituser/${ele.id}`}>EDIT</Link></td>
                     </tr> 
                 )
             }
