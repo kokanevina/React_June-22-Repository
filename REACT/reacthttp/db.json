@@ -3,22 +3,22 @@
     {
       "id": 1,
       "name": "hariom",
-      "username": "h123",
+      "username": "hari12",
       "email": "hari@gmail.com",
       "phone": "9898989898"
     },
     {
       "id": 2,
-      "name": "pari",
+      "name": "parinita",
       "username": "pari1255",
       "email": "pari@gmail.com",
       "phone": "7878787878"
     },
     {
-      "id": "4",
+      "id": "5",
       "name": "vina",
       "username": "vina1345",
-      "email": "vina@gmail.com",
+      "email": "vina@gmail",
       "phone": "8888888888"
     }
   ]
