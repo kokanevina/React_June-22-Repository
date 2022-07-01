@@ -1,0 +1,2 @@
+Dispatch increment action from Incr Component
+and Decrement action frm Decr component
