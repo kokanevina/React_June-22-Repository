@@ -1,16 +1,16 @@
 
 
-export let depositFun=()=>{
+export let depositFun=(deptamt)=>{
     return {
         type:"DEPOSIT",
-        payload : 6000
+        payload : deptamt
     }
 }
 
-export let withdrawFun=()=>{
+export let withdrawFun=(withamt)=>{
         return {
             type:"WITHDRAW",
-            payload : 4000
+            payload : withamt
         }
 }
 

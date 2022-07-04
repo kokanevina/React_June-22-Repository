@@ -22,8 +22,9 @@ function App() {
       <h3>ACCOUNT STATE</h3>
     </div>
     <i>{balance}</i> <br></br>
-    <button onClick={()=>dispatch(depositFun())}>DEPOSIT</button>
-    <button onClick={()=>dispatch(withdrawFun())}>WITHDRAW</button>
+    {/* take user input for deposit amount and withdraw amount. using useState */}
+    <button onClick={()=>dispatch(depositFun(7000))}>DEPOSIT</button>
+    <button onClick={()=>dispatch(withdrawFun(4000))}>WITHDRAW</button>
     </div>
   );
 }
