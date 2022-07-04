@@ -1,19 +1,19 @@
 
 import {myAccount}  from '../DATA/Account';
 
-let updateBalance=(state=myAccount,action)=>{
+let updateBalance=(state=myAccount.balance,action)=>{
         console.log("State coming at reducer:"+state);
         console.log("Action  coming at reducer:"+action.type);
         if(action.type==='DEPOSIT'){
-                 myAccount.balance=myAccount.balance+action.payload;
-                 return myAccount;
+                console.log("Deposit amount:"+action.payload);
+                 return state+action.payload;
         }
         else if(action.type==='WITHDRAW'){
-            myAccount.balance=myAccount.balance-action.payload;
-            return myAccount;
+                console.log("Withdraw amount:"+action.payload);
+                return state-action.payload
         }
         else{
-                return myAccount;
+                return state;
         }
 }
 
